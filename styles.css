@@ -1,0 +1,99 @@
+body{
+    text-align: center;
+    background-color: #061E29;
+
+}
+
+.custom-font {
+  font-family: "Jim Nightshade", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1{
+    font-size: 5rem;
+    margin: 0%;
+}
+
+#text {
+    white-space: pre-line;
+}
+
+p{
+    font-size: 3rem;
+    margin:0 0 20px 0;
+}
+
+.loading span {
+  display: inline-block;
+  animation: bounce 0.6s infinite alternate;
+}
+
+.loading span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.loading span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-15px);
+  }
+}
+
+.loading{
+    font-size: 5rem;
+    color: white;
+    transition: opacity 1.5s ease;
+}
+
+.hidden {
+    opacity: 0;
+    transition: opacity 1.5s ease;
+}
+
+.show {
+    opacity: 1;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 1.5s ease;
+}
+
+@media (max-width: 768px) {
+
+    .container{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .card{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    h1{
+        font-size: 3rem;    
+        margin:0%;
+    }
+
+    p{
+        font-size: 1rem;
+        margin:0 0 20px 0;
+    }
+
+    #image{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
